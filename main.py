@@ -112,7 +112,7 @@ class CommentModel(db.Model, UserMixin):
     user_ref = relationship("Users", back_populates="user_comments")
 
 
-# db.create_all()
+db.create_all()
 
 @login_manager.user_loader
 def load_user(user_id):
